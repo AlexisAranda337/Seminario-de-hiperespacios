@@ -1,0 +1,57 @@
+<!-- ==========================================================================
+  FICHAS (ventanas de información)
+  Una <section class="vw" id="v-..."> por ficha. Se abren con cualquier
+  enlace que tenga data-view="v-..." (ver js/07-fichas.js).
+  Para agregar la ficha de una persona del comité, copia el bloque de
+  «v-sem», cambia su id (p. ej. id="v-apellido") y enlázala desde el panel
+  «Comité Organizador» con data-view="v-apellido".
+  ========================================================================== -->
+<div class="views" id="views" role="dialog" aria-modal="true" aria-label="Información">
+  <header class="vbar"><button class="vback" type="button">← Volver</button><b>SPTCH</b></header>
+  <section class="vw" id="v-sem">
+    <p class="vk">Seminario de la Facultad de Ciencias · Universidad Autónoma del Estado de México</p>
+    <h2>Teoría de Continuos e Hiperespacios</h2>
+    <div class="vgrid">
+      <div class="card">
+        <h3>Desde</h3>
+        <p class="st">Enero de 2016</p>
+      </div>
+      <div class="card">
+        <h3>Sesiones</h3>
+        <dl>
+          <dt>Horario</dt>
+          <dd>Martes, de 12:00 a 14:00 horas</dd>
+          <dt>Sede</dt>
+          <dd>Salón 25, Edificio G, Facultad de Ciencias, UAEMéx</dd>
+          <dt>Modalidad</dt>
+          <dd>Presencial, en línea (Zoom / Teams) e híbrida</dd>
+        </dl>
+      </div>
+      <div class="card wide">
+        <h3>Líneas de trabajo</h3>
+        <div class="chips">
+          <span>Topología general</span><span>Teoría de continuos</span><span>Hiperespacios</span
+          ><span>Productos simétricos</span><span>Funciones inducidas</span
+          ><span>Límites inversos</span><span>Sistemas dinámicos</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Blog y avisos</h3>
+        <a class="lnk" href="https://seminariocontinuoshiperespacios.wordpress.com/" target="_blank" rel="noopener"
+          >Blog del seminario ›</a
+        ><a class="lnk" href="https://seminariocontinuoshiperespacios.wordpress.com/galeria-de-fotos/" target="_blank" rel="noopener"
+          >Galería de fotos ›</a
+        >
+      </div>
+      <div class="card">
+        <h3>Grabaciones</h3>
+        <a class="lnk" href="https://www.youtube.com/channel/UCITm71-MY45jk_qBd6s__mA" target="_blank" rel="noopener"
+          >Canal de YouTube ›</a
+        >
+      </div>
+      <div class="card wide quote">
+        Un continuo es un espacio métrico, compacto, conexo y no vacío.<span>Definición fundamental</span>
+      </div>
+    </div>
+  </section>
+</div>

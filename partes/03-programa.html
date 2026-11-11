@@ -1,0 +1,142 @@
+<!-- ==========================================================================
+  PROGRAMA
+  Una tarjeta (.mcard) por mes. Cada <li> es una sesión:
+    · <span class="d">  día del mes
+    · <b>               ponente
+    · <small>           institución o modalidad
+    · <i class="tt">    título breve de la plática
+    · data-id           fecha AAAA-MM-DD; enlaza con el resumen que se
+                        muestra al hacer clic (js/03-programa-datos.js)
+  El contenedor .months lleva data-anio="2026": la cuenta regresiva lo usa.
+  Para una sesión aún sin ponente usa <li class="tba"> (sin data-id).
+  ========================================================================== -->
+<section class="prog" id="programa">
+  <span class="badge">X Aniversario · 2016–2026</span>
+  <h2>Programa 2026B</h2>
+  <p class="sub">
+    <strong>Seminario Permanente</strong> de Teoría de Continuos e Hiperespacios
+    <strong>2026B</strong>
+  </p>
+  <div class="pinfo">
+    <span
+      ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" />
+        <circle cx="12" cy="10" r="2.5" /></svg
+      >Facultad de Ciencias y en línea (Teams / Zoom)</span
+    ><span
+      ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" /></svg
+      >Martes a las 12:00 horas</span
+    >
+  </div>
+  <p class="sub">
+    <small><strong>Presiona</strong> la sesión deseada para ver el resumen</small>
+  </p>
+  <div class="months" data-anio="2026">
+    <article class="mcard" style="--mc: #2f5153">
+      <h3>Agosto</h3>
+      <ul>
+        <li data-id="2026-08-18" tabindex="0">
+          <span class="d">18</span>
+          <div>
+            <b>M. en C. Martha Hernández Castañeda</b><small>Sesión virtual · Teams</small
+            ><i class="tt">Funciones inducidas al hiperespacio de los subconjuntos cerrados totalmente disconexos</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard gold" style="--mc: #c19758">
+      <h3>Septiembre</h3>
+      <ul>
+        <li data-id="2026-09-22" tabindex="0">
+          <span class="d">22</span>
+          <div>
+            <b>Dr. Leonel Rito Rodríguez</b><small>Sesión virtual · Teams</small
+            ><i class="tt">Fuertemente mezclante contra fuertemente grueso transitivo: ¿cuándo coinciden?</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard" style="--mc: #108378">
+      <h3>Octubre</h3>
+      <ul>
+        <li data-id="2026-10-20" tabindex="0">
+          <span class="d">20</span>
+          <div>
+            <b>Dr. José Gerardo Ahuatzi Reyes</b><small>Sesión virtual · Teams</small
+            ><i class="tt">Conexidad local y conexidad cíclica de los hiperespacios C<sub>ε</sub>(X)</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard" style="--mc: #4a6453">
+      <h3>Noviembre</h3>
+      <ul>
+        <li class="tba">
+          <span class="d">··</span>
+          <div>
+            <b>Próximas sesiones por anunciar</b
+            ><small>Consulta el blog del seminario</small>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Semestre anterior: mismo formato -->
+  <h3 class="prev-h">Semestre 2026A</h3>
+  <div class="months prev" data-anio="2026">
+    <article class="mcard" style="--mc: #2f5153">
+      <h3>Febrero</h3>
+      <ul>
+        <li data-id="2026-02-17" tabindex="0">
+          <span class="d">17</span>
+          <div>
+            <b>Dr. Rafael Alcaraz Barrera</b><small>Sesión virtual · Zoom</small
+            ><i class="tt">Especificación, obstrucciones y problemas abiertos</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard gold" style="--mc: #c19758">
+      <h3>Marzo</h3>
+      <ul>
+        <li data-id="2026-03-17" tabindex="0">
+          <span class="d">17</span>
+          <div>
+            <b>Dr. en C. Leonardo Juárez Villa</b><small>Sesión virtual · Zoom</small
+            ><i class="tt">Continuos tipo árbol y dendritas en límites inversos generalizados</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard" style="--mc: #108378">
+      <h3>Abril</h3>
+      <ul>
+        <li data-id="2026-04-14" tabindex="0">
+          <span class="d">14</span>
+          <div>
+            <b>Bryant Rosado Silva</b><small>Sesión virtual · Zoom</small
+            ><i class="tt">Generic objects in topology: an overview</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="mcard" style="--mc: #4a6453">
+      <h3>Mayo</h3>
+      <ul>
+        <li data-id="2026-05-19" tabindex="0">
+          <span class="d">19</span>
+          <div>
+            <b>Dr. Fernando Orozco Zitli</b><small>Auditorio Jorge Lugo de la Fuente y Zoom</small
+            ><i class="tt">Nuevas clases de conjuntos no estorbadores de un continuo</i>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+<!-- Separador decorativo (mitad izquierda de la imagen de flores) -->
+<div class="sep sep-l" aria-hidden="true">
+</div>

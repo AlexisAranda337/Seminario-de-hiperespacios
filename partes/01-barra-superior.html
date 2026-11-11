@@ -1,0 +1,134 @@
+<!-- ==========================================================================
+  BARRA SUPERIOR
+  Logo, tres botones (Objetivos, Comité Organizador y Programa) e iconos de
+  enlaces (blog, galería y YouTube). Su comportamiento está en js/01-barra-superior.js.
+  ========================================================================== -->
+<nav>
+  <div class="bar">
+    <b class="logo" role="img" aria-label="Seminario de Continuos e Hiperespacios"
+      ><img src="img/logo-hiperespacios.svg" alt="" width="240" height="240"
+    /></b>
+    <a href="#" role="button" aria-expanded="false" aria-controls="mega" data-t="obj">Objetivos</a
+    ><a href="#" role="button" aria-expanded="false" aria-controls="mega" data-t="com"
+      >Comité Organizador</a
+    > <a href="#" role="button" aria-expanded="false" aria-controls="mega" data-t="prog">Programa 2026B</a>
+    <div class="soc">
+      <a
+        href="https://seminariocontinuoshiperespacios.wordpress.com/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Blog del seminario"
+        title="Blog del seminario"
+        ><svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+          <path d="M14 3v6h6" />
+          <path d="M8 13h8M8 17h5" /></svg></a
+      ><a
+        href="https://seminariocontinuoshiperespacios.wordpress.com/galeria-de-fotos/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Galería de fotos"
+        title="Galería de fotos"
+        ><svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <circle cx="9" cy="10" r="2" />
+          <path d="m21 16-5-5-9 9" /></svg></a
+      ><a
+        href="https://www.youtube.com/channel/UCITm71-MY45jk_qBd6s__mA"
+        target="_blank"
+        rel="noopener"
+        aria-label="YouTube"
+        title="YouTube"
+        ><svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+          />
+          <path d="m10 15 5-3-5-3z" /></svg
+      ></a>
+    </div>
+  </div>
+  <!-- Menú desplegable: un <section class="panel"> por cada botón de la barra.
+       El botón con data-t="obj" abre el panel con id="obj", y así con los demás. -->
+  <div class="mega" id="mega">
+    <section class="panel g1" id="obj">
+      <h3 class="full">Objetivos</h3>
+      <p class="obj">
+        Reunir semanalmente a profesores y estudiantes interesados en la topología general, la teoría
+        de continuos y sus hiperespacios, para exponer y discutir resultados recientes, técnicas de
+        demostración y problemas abiertos.
+      </p>
+      <p class="obj">
+        Fortalecer la formación de estudiantes de licenciatura y posgrado de la Facultad de Ciencias,
+        dándoles un espacio para presentar sus avances de tesis e interactuar con investigadores de la
+        UAEMéx y de otras instituciones.
+      </p>
+    </section>
+    <section class="panel pc" id="com">
+      <div>
+        <h3>Comité Organizador</h3>
+        <p class="txt">
+          El Seminario Permanente de Teoría de Continuos e Hiperespacios es organizado por profesores
+          e investigadores del área de Topología de la Facultad de Ciencias de la UAEMéx.
+        </p>
+        <p class="meta"><a href="#v-sem" data-view="v-sem">Ver ficha del seminario ›</a></p>
+      </div>
+      <!-- PARA COMPLETAR: agrega aquí a las personas del comité, una línea por persona:
+      <div>
+        <h3>Integrantes</h3>
+        <p class="nm">Dr. Nombre Apellido</p>
+        <p class="nm">Dra. Nombre Apellido</p>
+      </div>
+      -->
+      <div>
+        <h3>Sede</h3>
+        <p class="nm">Facultad de Ciencias, UAEMéx</p>
+        <p class="nm">Salón 25, Edificio G</p>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p class="nm">Martes, 12:00 a 14:00 h</p>
+        <p class="nm">Presencial y en línea</p>
+      </div>
+    </section>
+    <!-- Panel «Programa»: enlaces al programa y al blog -->
+    <section class="panel" id="prog">
+      <div>
+        <h3>Programa</h3>
+        <p class="txt">
+          Consulta las sesiones del semestre 2026B y del 2026A. Los avisos, enlaces de conexión y
+          resúmenes completos se publican en el blog del seminario.
+        </p>
+        <a class="big" href="#programa" data-go="programa">Programa 2026B ›</a>
+        <a class="big" href="https://seminariocontinuoshiperespacios.wordpress.com/" target="_blank" rel="noopener"
+          >Blog del seminario ›</a
+        >
+      </div>
+    </section>
+  </div>
+</nav>
+<!-- Fondo oscuro detrás del menú; al hacer clic en él, el menú se cierra -->
+<div class="scrim"></div>
